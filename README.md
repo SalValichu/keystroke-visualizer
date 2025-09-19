@@ -2,14 +2,13 @@
 
 A clean, minimal keystroke visualizer for macOS that displays your keyboard and mouse inputs on screen. Perfect for screen recordings, tutorials, and presentations.
 
-![Keystroke Visualizer](screenshot.png)
+## Beta V1.0
 
-## Beta Version
 This is a beta release. The FPS overlay feature is currently not available.
 
 ## Quick Start
 
-To get started with the Keystroke Visualizer, run these commands in your terminal:
+Run these commands in your terminal:
 
 ```bash
 git clone https://github.com/SalValichu/keystroke-visualizer.git
@@ -18,77 +17,42 @@ make
 make run
 ```
 
-## Initial Setup
+You will be prompted for TWO system permissions:
 
-When you first run the application, you will be prompted for two system permissions:
+1. Accessibility permissions (to monitor keystrokes)
+2. Screen recording permissions (to display overlay)
 
-1. **Accessibility Permissions** - Required to monitor keystrokes and mouse events
-2. **Screen Recording Permissions** - Required to display the overlay on top of other applications
+After allowing both permissions, the app will close automatically.
 
-After granting these permissions, the app will close. Simply run `make run` again to start using the application.
+Simply rerun:
+```bash
+make run
+```
+
+And then you're in!
 
 ## How to Use
 
-### Basic Operation
-Once running, the app displays a visual representation of keyboard and mouse inputs on your screen. The default layout includes:
+Once the app is running:
 
-- WASD keys arranged in a classic gaming layout
-- Space bar
-- Left and right mouse buttons
+- WASD keys will light up when pressed
+- Space bar will show when pressed
+- Mouse buttons will show when clicked
 
-When you press any of these keys, they will light up with a visual effect.
+To customize the layout:
+1. Click the keyboard icon in the menu bar
+2. Select "Edit Mode"
+3. Move and resize elements as needed
+4. Click "Exit Edit Mode" when finished
 
-### Menu Bar Controls
-The app adds a keyboard icon to your menu bar. Click this icon to access the following options:
-
-1. **Edit Mode** - Allows you to customize the layout:
-   - Move keys by dragging them
-   - Resize keys using the resize handles
-   - Add new keys using the "+" button
-   - Delete keys using the "-" button
-   - Exit edit mode when finished
-
-2. **Presets** - Save and load custom layouts:
-   - Save your current layout as a preset
-   - Load a previously saved preset
-   - Delete existing presets
-
-3. **Settings** - Customize display options:
-   - Fade delay: How long keys stay visible after being pressed
-   - Toggle click-through mode
-   - Toggle FPS display (beta feature)
-
-4. **Quit** - Close the application
-
-### Default Controls
-- **WASD keys**: Move the visual representation
-- **Space bar**: Shows when space is pressed
-- **Left mouse button**: Shows when left mouse button is clicked
-- **Right mouse button**: Shows when right mouse button is clicked
+To quit the app, click the keyboard icon in the menu bar and select "Quit".
 
 ## Building from Source
 
 ### Prerequisites
 - macOS 10.15 or later
-- Xcode command line tools (install with `xcode-select --install`)
+- Xcode command line tools (install with `xcode-select --install`) ( Maybe needed??? idk )
 
-### Build Commands
-```bash
-# Clone the repository
-git clone https://github.com/SalValichu/keystroke-visualizer.git
-cd keystroke-visualizer
-
-# Build the app
-make
-
-# Run the app
-make run
-
-# Install to Applications folder (optional)
-make install
-```
-
-## Customization
 
 ### Editing Layout
 1. Click the keyboard icon in the menu bar

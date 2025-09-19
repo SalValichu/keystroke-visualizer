@@ -175,3 +175,27 @@ The app requires accessibility permissions to monitor keystrokes:
 - Uses SwiftUI for efficient rendering
 - Implements grid snapping for consistent layout
 - Optimized for minimal CPU usage
+
+# KNOWN BROKEN & UNFINISHED KEYS / ERRORS
+## Keys
+- shift
+- capslock ( obv )
+- control
+- option
+- command
+## Errors
+- Layout in general... It is weird af
+- FPS overlay broke
+- I don't know what else there is but I'm sure there's more lmao
+
+# Future Plans
+- Transparency Slider
+- Colour
+- FPS Overlay
+- Better Keyboard Layouts
+- More Customization Options
+- More Key Types
+- Better Error Handling
+- Default Presets
+- Resizing
+- Better editor

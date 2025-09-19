@@ -1,5 +1,132 @@
 # Keystroke Visualizer
 
+A clean, minimal keystroke visualizer for macOS that displays your keyboard and mouse inputs on screen. Perfect for screen recordings, tutorials, and presentations.
+
+![Keystroke Visualizer](screenshot.png)
+
+## Beta Version
+This is a beta release. The FPS overlay feature is currently not available.
+
+## Quick Start
+
+To get started with the Keystroke Visualizer, run these commands in your terminal:
+
+```bash
+git clone https://github.com/SalValichu/keystroke-visualizer.git
+cd keystroke-visualizer
+make
+make run
+```
+
+## Initial Setup
+
+When you first run the application, you will be prompted for two system permissions:
+
+1. **Accessibility Permissions** - Required to monitor keystrokes and mouse events
+2. **Screen Recording Permissions** - Required to display the overlay on top of other applications
+
+After granting these permissions, the app will close. Simply run `make run` again to start using the application.
+
+## How to Use
+
+### Basic Operation
+Once running, the app displays a visual representation of keyboard and mouse inputs on your screen. The default layout includes:
+
+- WASD keys arranged in a classic gaming layout
+- Space bar
+- Left and right mouse buttons
+
+When you press any of these keys, they will light up with a visual effect.
+
+### Menu Bar Controls
+The app adds a keyboard icon to your menu bar. Click this icon to access the following options:
+
+1. **Edit Mode** - Allows you to customize the layout:
+   - Move keys by dragging them
+   - Resize keys using the resize handles
+   - Add new keys using the "+" button
+   - Delete keys using the "-" button
+   - Exit edit mode when finished
+
+2. **Presets** - Save and load custom layouts:
+   - Save your current layout as a preset
+   - Load a previously saved preset
+   - Delete existing presets
+
+3. **Settings** - Customize display options:
+   - Fade delay: How long keys stay visible after being pressed
+   - Toggle click-through mode
+   - Toggle FPS display (beta feature)
+
+4. **Quit** - Close the application
+
+### Default Controls
+- **WASD keys**: Move the visual representation
+- **Space bar**: Shows when space is pressed
+- **Left mouse button**: Shows when left mouse button is clicked
+- **Right mouse button**: Shows when right mouse button is clicked
+
+## Building from Source
+
+### Prerequisites
+- macOS 10.15 or later
+- Xcode command line tools (install with `xcode-select --install`)
+
+### Build Commands
+```bash
+# Clone the repository
+git clone https://github.com/SalValichu/keystroke-visualizer.git
+cd keystroke-visualizer
+
+# Build the app
+make
+
+# Run the app
+make run
+
+# Install to Applications folder (optional)
+make install
+```
+
+## Customization
+
+### Editing Layout
+1. Click the keyboard icon in the menu bar
+2. Select "Edit Mode"
+3. Drag keys to reposition them
+4. Use the resize handles to change key sizes
+5. Add new keys with the "+" button
+6. Delete keys with the "-" button
+7. Click "Exit Edit Mode" when finished
+
+### Saving Presets
+1. Click the keyboard icon in the menu bar
+2. Select "Presets" > "Save Preset"
+3. Enter a name for your preset
+4. Click "Save"
+
+### Loading Presets
+1. Click the keyboard icon in the menu bar
+2. Select "Presets" > "Load Preset"
+3. Choose a saved preset from the list
+
+## Troubleshooting
+
+### Permissions Issues
+If the app doesn't detect keystrokes:
+1. Go to System Preferences > Security & Privacy > Privacy
+2. Check that KeystrokeVisualizer has Accessibility permissions
+3. Restart the app
+
+### App Not Responding
+If the app becomes unresponsive:
+1. Use Cmd+Q to quit
+2. Run `make run` to restart
+
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+# Keystroke Visualizer
+
 A macOS application that visualizes keystrokes and mouse clicks on your screen. Perfect for presentations, tutorials, and screen recordings.
 
 ## Features
